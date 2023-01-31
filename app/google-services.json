@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "854114577529",
+    "project_id": "dalua-1653300586621",
+    "storage_bucket": "dalua-1653300586621.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854114577529:android:e8e5ce6f798788d36cf8a8",
+        "android_client_info": {
+          "package_name": "com.dalua.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854114577529-j40g5ahrqf3qaav6m2dlnbo885bptv62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dalua.app",
+            "certificate_hash": "c9aa14e03a520f552604e30dbfe4ee5fbbb676f1"
+          }
+        },
+        {
+          "client_id": "854114577529-15805t4qkqei9au5s3mevdjliu5i6gm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnSxsCq4loRgu6NR_v_OkGCpEdO8e3h0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854114577529-15805t4qkqei9au5s3mevdjliu5i6gm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

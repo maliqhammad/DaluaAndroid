@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.dalua.app.ui.home.fragments.home.HomeFragment"
+        android:label="Home Fragment" />
+
+
+    <fragment
+        android:id="@+id/add"
+        android:name="com.dalua.app.ui.home.fragments.add.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.dalua.app.ui.home.fragments.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+
+
+</navigation>

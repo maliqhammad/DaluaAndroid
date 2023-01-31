@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/btm_navig_bg.xml" value="0.1125" />
+        <entry key="app/src/main/res/drawable/btn_blu_dark_white_txt.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/btn_blu_white_txt.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_delete_account_bg.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/btn_gradient_background.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_gradient_background_red.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_gray_white_txt.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/btn_white_bg.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_white_blue_txt.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/btn_white_red_txt.xml" value="0.1605" />
+        <entry key="app/src/main/res/drawable/card_bg_moonlight_white.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/circle_green_db.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/circle_red_db.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/circle_white_bg.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/circle_white_db.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/cloud_connectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/cloud_disconnectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/edit_profile_bg.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/horizontal_progress.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/horizontal_progress_downloading.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/ic_arrow_back.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_connectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_bluetooth_disconnectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_connectivity_failed.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_connectivity_icon.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_error_connection_24.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/ic_icon_wifi_blue.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_icon_wifi_blue_disable.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_moon_middle_filled.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/ic_profile_user.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_search_gray.xml" value="0.104" />
+        <entry key="app/src/main/res/drawable/ic_success_icon.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/ic_user_placeholder.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/image_loading_animation.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/main_gradient.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/main_gradient_bottom.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/navigation_icon_color.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/round_blck.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/round_blue.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/round_corner_layout_scrn_bg.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/round_green.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/rounded_red_stroke.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/search_location_bg.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/tab_bottom_line_bg.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/tab_bottom_line_unselected_bg.xml" value="0.1335" />
+        <entry key="app/src/main/res/drawable/wifi_connectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/drawable/wifi_disconnectivity.xml" value="0.141" />
+        <entry key="app/src/main/res/layout/activity_aquarium_details.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_bluetooth_discovery.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/activity_change_advance_values.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_change_device_status.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/activity_create_schedule.xml" value="0.4246704331450094" />
+        <entry key="app/src/main/res/layout/activity_device_details.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/activity_geo_location.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_group_details.xml" value="0.2194871794871795" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/activity_schedule_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_schedule_preview.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_schedule_preview1.xml" value="0.25406646728515625" />
+        <entry key="app/src/main/res/layout/activity_send_code_verification.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/activity_show_wifi_connection.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.2194871794871795" />
+        <entry key="app/src/main/res/layout/activity_update_device_ota.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_verify_code.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/add_device_activity.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/alert_dialog_layout.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/connection_progress_dialog.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/device_type_dialog.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/devices_list_dialog.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/devices_list_dialog_item.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/fragment_advanced.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_advanced_old.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_dalua_schedule.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/fragment_easy.xml" value="0.25401611328125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_instant_control.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/fragment_master_control.xml" value="0.14078947368421052" />
+        <entry key="app/src/main/res/layout/fragment_my_schedule.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_public_schedule.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/image_loading_animation.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/item_add_wifi_cred.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_aquarium.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_aquarium_group_add.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/item_aws_progress_dialog.xml" value="0.1401315789473684" />
+        <entry key="app/src/main/res/layout/item_create_aquarium.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_create_aquarium_clean_time.xml" value="0.14078947368421052" />
+        <entry key="app/src/main/res/layout/item_create_device.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/item_create_equi.xml" value="0.10659637451171876" />
+        <entry key="app/src/main/res/layout/item_create_equi2.xml" value="0.14078947368421052" />
+        <entry key="app/src/main/res/layout/item_create_group.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/item_dalua_schedules.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/item_delete_dialog.xml" value="0.14638157894736842" />
+        <entry key="app/src/main/res/layout/item_device_aquarium.xml" value="0.19674682617187503" />
+        <entry key="app/src/main/res/layout/item_device_details.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_device_group.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_equarium_group.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_equarium_group_add.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_geo_location.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_geo_location_empty.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_home_aquarium.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_info.xml" value="0.14638157894736842" />
+        <entry key="app/src/main/res/layout/item_logout_dialog.xml" value="0.1457236842105263" />
+        <entry key="app/src/main/res/layout/item_move_to_group_dialog.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_my_schedules.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/item_networks.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_networks_add.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_pairing_device.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_progress.xml" value="0.20787037037037037" />
+        <entry key="app/src/main/res/layout/item_progress_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_public_schedules.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/item_save_schedule.xml" value="0.19907407407407407" />
+        <entry key="app/src/main/res/layout/item_select_ramptime.xml" value="0.20879629629629629" />
+        <entry key="app/src/main/res/layout/item_selected_dot.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_shared_user.xml" value="0.20601851851851852" />
+        <entry key="app/src/main/res/layout/item_success_dialog.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_turn_bluetooth_on.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/item_turn_wifi_on.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_update_device_ota.xml" value="0.21296296296296297" />
+        <entry key="app/src/main/res/layout/share_aquarium_dialog.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/shared_aquarium_dialog.xml" value="0.14078947368421052" />
+        <entry key="app/src/main/res/layout/tab_to_connect_activity.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/layout/troubleshoot_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottem_nav_menu.xml" value="0.14638157894736842" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1335" />
+        <entry key="app/src/main/res/xml/file_list.xml" value="0.1493421052631579" />
+        <entry key="countrycodepicker/src/main/res/drawable/ic_search.xml" value="0.104" />
+        <entry key="countrycodepicker/src/main/res/drawable/search_bg.xml" value="0.1655" />
+        <entry key="countrycodepicker/src/main/res/layout/layout_countrypicker.xml" value="0.14638157894736842" />
+        <entry key="countrycodepicker/src/main/res/layout/row_country.xml" value="0.20601851851851852" />
+        <entry key="countrycodepicker/src/main/res/layout/row_country_empty.xml" value="0.20601851851851852" />
+        <entry key="imagepicker/src/main/res/drawable/dialog_backgound.xml" value="0.1535" />
+        <entry key="imagepicker/src/main/res/layout/dialog_choose_app.xml" value="0.14078947368421052" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

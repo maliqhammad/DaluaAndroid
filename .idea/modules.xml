@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DaluaAndroid.iml" filepath="$PROJECT_DIR$/.idea/modules/DaluaAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DaluaAndroid.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/countrycodepicker/DaluaAndroid.countrycodepicker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/datepickerlibrary/DaluaAndroid.datepickerlibrary.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/DaluaAndroid.imagepicker.unitTest.iml" />
+    </modules>
+  </component>
+</project>

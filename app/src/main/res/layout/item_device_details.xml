@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dalua.app.ui.devicedetails.DeviceDetailsVM" />
+
+        <variable
+            name="item"
+            type="com.dalua.app.models.Device" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:cardElevation="@dimen/_6sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline21"
+        app:layout_constraintStart_toStartOf="@+id/guideline20"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.65999997">
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/app_place_holder"
+                app:setGlideError="@{@drawable/app_place_holder}"
+                app:setGlideImage="@{item.product.image}"
+                app:setGlidePlaceHolder="@{@drawable/app_place_holder}" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_bold"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:text="@{item.name}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:contentDescription="@string/todo"
+                        android:src="@{item.status==0||item.status==2?@drawable/ic_icon_wifi_blue_disable:@drawable/ic_icon_wifi_blue}" />
+
+                    <TextView
+                        android:id="@+id/textViewr5"
+                        deviceCompletedText="@{item.completed}"
+                        deviceStatusText="@{item.status}"
+                        deviceIpAddress="@{item.ipAddress}"
+                        deviceVersion="@{item.version}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:gravity="center"
+                        android:maxEms="15"
+                        android:maxLines="1"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/text_secondary_color"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageView
+                        deviceCompletedLED="@{item.completed}"
+                        deviceStatusLED="@{item.status}"
+                        deviceIpAddress="@{item.ipAddress}"
+                        deviceVersion="@{item.version}"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:contentDescription="@string/todo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@{item.waterType.equals(`Marine`)?@drawable/round_blue:@drawable/round_green}"
+                    android:text="@{item.waterType.equals(`Marine`)?`Saltwater`:`Freshwater`}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

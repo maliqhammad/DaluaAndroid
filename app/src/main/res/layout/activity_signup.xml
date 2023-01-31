@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--before it was 60% of the screen-->
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dalua.app.ui.registration.signup.SignupVM" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_signup_scrn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.registration.signup.SignupActivity"
+        tools:ignore="ExtraText">
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:scrollbars="none"-->
+        <!--            android:layout_marginBottom="@dimen/_5sdp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/edt_grey_view"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2"
+                app:layout_constraintVertical_bias="0.00999999">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_facebook"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/signup_with_facebook"
+                    android:textColor="@color/text_secondary_color"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:id="@+id/image_vfdfiew"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:adjustViewBounds="true"
+                android:onClick="@{v->viewModel.onBackPressed()}"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/hi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/image_vfdfiew"
+                app:layout_constraintVertical_bias="0.026" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="@string/create_new_account"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                app:layout_constraintVertical_bias="0.011" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:scrollIndicators="none"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/button1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/full_name"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@={viewModel.firstName}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/edittext2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/middle_name"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@={viewModel.middleName}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/edittext3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@={viewModel.lastName}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/edittext6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/username"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@={viewModel.userName}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/edittext4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/email"
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@={viewModel.email}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edt_grey_view"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/country_flag"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:contentDescription="@string/todo"
+                            android:onClick="@{v->viewModel.showCodePicker()}" />
+
+                        <TextView
+                            android:id="@+id/country_code_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/edt_grey_view"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:hint="@string/_123code"
+                            android:onClick="@{v->viewModel.showCodePicker()}"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:text="@={viewModel.phoneCode}"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/icon_hint_clr"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/edt_grey_view"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:hint="@string/phone_number"
+                            android:importantForAutofill="no"
+                            android:inputType="phone"
+                            android:maxLength="13"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingVertical="@dimen/_10sdp"
+                            android:text="@={viewModel.phoneNumber}"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/icon_hint_clr"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/sdfsd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:hint="@string/select_tank_size"
+                        android:onClick="@{v->viewModel.showTankSizePicker()}"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:text="@{viewModel.tankSize}"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/icon_hint_clr"
+                        android:textSize="@dimen/_12sdp"
+                        app:drawableRightCompat="@drawable/ic_dropdown" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etPasswordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/icon_hint_clr">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/edt_grey_view"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:gravity="start"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="@={viewModel.password}"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/icon_hint_clr"
+                            android:textSize="@dimen/_12sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etConfirmPasswordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/edt_grey_view"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/icon_hint_clr">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@drawable/edt_grey_view"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:gravity="start"
+                            android:hint="@string/confirm_password"
+                            android:inputType="textPassword"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="@={viewModel.confirmPassword}"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/icon_hint_clr"
+                            android:textSize="@dimen/_12sdp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_regular"
+                android:gravity="center"
+                android:onClick="goToLoginSignup"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/don_t_have_account_login"
+                android:textColor="@color/text_secondary_color"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_37sdp"
+                android:background="@drawable/btn_blu_white_txt"
+                android:fontFamily="@font/open_sans_bold"
+                android:onClick="signUp"
+                android:stateListAnimator="@null"
+                android:text="@string/signup"
+                android:textAllCaps="false"
+                app:backgroundTint="@color/selected_blue_dot_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toTopOf="@+id/guideline54"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/button1"
+                app:layout_constraintVertical_bias="0.13">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/text_secondary_color"
+                    android:contentDescription="@string/todo" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/or"
+                    android:textColor="@color/text_secondary_color"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_weight="1"
+                    android:background="@color/text_secondary_color"
+                    android:contentDescription="@string/todo" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_37sdp"
+                android:background="@drawable/edt_grey_view"
+                android:gravity="center"
+                android:onClick="@{v->viewModel.signInWithGooglePressed()}"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline23"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline22"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+                app:layout_constraintVertical_bias="0.208">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_google_icon"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="@string/signup_with_google"
+                    android:textColor="@color/text_secondary_color"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.08" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.71" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        </ScrollView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

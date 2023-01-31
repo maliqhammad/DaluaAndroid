@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-core:2.50.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/442994e6626d99013acafd720e2a697a/transformed/jetified-aws-android-sdk-core-2.50.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/442994e6626d99013acafd720e2a697a/transformed/jetified-aws-android-sdk-core-2.50.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.50.1/ea024b624eaf39a90d30f9a975171582f48ab515/aws-android-sdk-core-2.50.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

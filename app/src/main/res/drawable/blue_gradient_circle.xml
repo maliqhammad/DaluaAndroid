@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <gradient
+        android:startColor="#1FBCF1"
+        android:endColor="#9CF7FC"
+        android:angle="90"
+        android:gradientRadius="15dp"
+        android:color="@color/nav_tab_unselected"/>
+
+    <size
+        android:width="24dp"
+        android:height="24dp"/>
+</shape>

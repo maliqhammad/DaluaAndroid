@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sdsmdg.harjot:croller:1.0.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/45dfc4fed0ad087a400c47f55aecca3a/transformed/jetified-croller-1.0.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45dfc4fed0ad087a400c47f55aecca3a/transformed/jetified-croller-1.0.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45dfc4fed0ad087a400c47f55aecca3a/transformed/jetified-croller-1.0.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sdsmdg.harjot/croller/1.0.7/78af3d6f52e5833d7dd6fe18cddc9e7141d9c98/croller-1.0.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sdsmdg.harjot/croller/1.0.7/57c796149d6a296962f90f27077a5a8d40d3d89f/croller-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

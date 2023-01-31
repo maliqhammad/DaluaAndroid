@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dalua.app.ui.home.fragments.home.HomeFragmentViewModel" />
+
+
+        <variable
+            name="aquariumData"
+            type="com.dalua.app.models.ListAllAquariumResponse.SharedAquariums" />
+
+
+        <variable
+            name="user"
+            type="com.dalua.app.models.ListAllAquariumResponse.User" />
+
+        <variable
+            name="user1"
+            type="com.dalua.app.models.ListAllAquariumResponse.User" />
+
+        <variable
+            name="user2"
+            type="com.dalua.app.models.ListAllAquariumResponse.User" />
+
+        <variable
+            name="user3"
+            type="com.dalua.app.models.ListAllAquariumResponse.User" />
+
+        <variable
+            name="owner"
+            type="com.dalua.app.models.ListAllAquariumResponse.User" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_2sdp"
+        android:layout_marginVertical="@dimen/_6sdp"
+        android:onClick="@{v->viewModel.onAquariumClicked(aquariumData)}"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_13sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@{aquariumData.name, default=`Aquarium name`}"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine_horizontal_divider"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_vertical_divider"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/_1_devices_and_4_groups"
+                android:textColor="@color/light_blue_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@id/guideLine_horizontal_divider"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_vertical_divider"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <RelativeLayout
+                android:id="@+id/lytSharedUserImages"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_vertical_divider"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideLine_horizontal_divider">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ownerImage"
+                    setUserImage="@{owner.image}"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:civ_border_color="@color/red_led_color"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage3"
+                    setUserImage="@{user3.image}"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_21sdp"
+                    app:civ_border_color="@color/selected_blue_dot_color"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage2"
+                    setUserImage="@{user2.image}"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    app:civ_border_color="@color/selected_blue_dot_color"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage1"
+                    setUserImage="@{user1.image}"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    app:civ_border_color="@color/selected_blue_dot_color"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    setUserImage="@{user.image}"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:civ_border_color="@color/selected_blue_dot_color"
+                    app:civ_border_width="@dimen/_1sdp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sharedUSerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:gravity="bottom"
+                android:text="@{owner.firstName, default=@string/owner}"
+                android:textColor="@color/dark_blue_color"
+                android:textSize="@dimen/_6sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_vertical_divider"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/lytSharedUserImages"
+                app:layout_constraintTop_toTopOf="@id/guideLine_horizontal_divider"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <TextView
+                android:id="@+id/sharedUserLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:text="@string/owner"
+                android:textColor="@color/light_blue_color"
+                android:textSize="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideLine_vertical_divider"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/lytSharedUserImages"
+                app:layout_constraintTop_toBottomOf="@id/sharedUSerName"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/arrowImage"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_arrow_forward"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acceptButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/btn_blu_white_txt"
+                android:onClick="@{v->viewModel.onAcceptAquarium(user)}"
+                android:text="@string/accept"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/rejectButton"
+                app:layout_constraintStart_toStartOf="@id/guideLine_vertical_divider"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rejectButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/btn_red_white_txt"
+                android:onClick="@{v->viewModel.onRejectAquarium(user)}"
+                android:text="@string/reject"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/acceptButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/buttonGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="rejectButton,acceptButton" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/onwerTextViewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="sharedUSerName,sharedUserLabel" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_vertical_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLine_horizontal_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: gun0912.ted:tedpermission-rx1:2.2.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/017a18e7f8c4315c69a3c4b619203501/transformed/jetified-tedpermission-rx1-2.2.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/017a18e7f8c4315c69a3c4b619203501/transformed/jetified-tedpermission-rx1-2.2.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedpermission-rx1/2.2.3/24d7827ff161db9f28aa99d8a50f22a85049dd7/tedpermission-rx1-2.2.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/gun0912.ted/tedpermission-rx1/2.2.3/d9a3a0e35c8239df3307dad705bfda57257e7ccb/tedpermission-rx1-2.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

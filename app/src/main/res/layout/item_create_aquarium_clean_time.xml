@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+        <!--        android:layout_marginBottom="@dimen/_7sdp"-->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="how often do you test your aquarium?"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_10sdp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group_1"
+                android:checkedButton="@+id/radioButton1">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:buttonTint="@color/color_grey"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layoutDirection="rtl"
+                    android:layout_gravity="start"
+                    android:textColor="@color/text_secondary_color"
+                    android:textAlignment="textStart"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Monthly"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layoutDirection="rtl"
+                    android:buttonTint="@color/color_grey"
+                    android:layout_gravity="start"
+                    android:theme="@style/MyRadioButton"
+                    android:textAlignment="textStart"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/text_secondary_color"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Weekly"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                    android:background="?android:selectableItemBackground"
+                    android:layoutDirection="rtl"
+                    android:theme="@style/MyRadioButton"
+                    android:layout_gravity="start"
+                    android:buttonTint="@color/color_grey"
+                    android:textColor="@color/text_secondary_color"
+                    android:textAlignment="textStart"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Fortnightly"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="how often do you clean your filtration?"
+            android:textColor="@color/dark_blue_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/radio_group_2"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radioButton12">
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:buttonTint="@color/color_grey"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:background="?android:selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:textColor="@color/text_secondary_color"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:theme="@style/MyRadioButton"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="Monthly"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:background="?android:selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:buttonTint="@color/color_grey"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/text_secondary_color"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="Weekly"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:background="?android:selectableItemBackground"
+                android:layoutDirection="rtl"
+                android:theme="@style/MyRadioButton"
+                android:textColor="@color/text_secondary_color"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="Fortnightly"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/btn_comment_black_txt"
+                android:fontFamily="@font/open_sans_regular"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/icon_hint_clr"
+                app:backgroundTint="@color/dialog_button_color" />
+
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/btn_blu_white_txt"
+                android:backgroundTint="@color/selected_blue_dot_color"
+                android:fontFamily="@font/open_sans_bold"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

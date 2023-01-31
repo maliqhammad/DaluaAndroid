@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.anzaizai:EasySwipeMenuLayout:1.1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f66d616657a65db4bb05d8ac42eb77f7/transformed/jetified-EasySwipeMenuLayout-1.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f66d616657a65db4bb05d8ac42eb77f7/transformed/jetified-EasySwipeMenuLayout-1.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f66d616657a65db4bb05d8ac42eb77f7/transformed/jetified-EasySwipeMenuLayout-1.1.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.anzaizai/EasySwipeMenuLayout/1.1.4/1bbb198f48671203b8cc2bebd662c4bd92d65893/EasySwipeMenuLayout-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

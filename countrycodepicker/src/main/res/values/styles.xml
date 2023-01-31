@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTextStyle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">#de000000</item>
+    </style>
+
+    <style name="TextStyle" parent="BaseTextStyle"></style>
+
+    <style name="BaseCountryTextStyle" parent="TextStyle">
+        <item name="android:textColor">?countryNameColor</item>
+    </style>
+
+    <style name="CountryTextStyle" parent="BaseCountryTextStyle">
+        <item name="android:textColor">?countryNameColor</item>
+    </style>
+
+    <style name="BaseDialCodeTextStyle" parent="TextStyle">
+        <item name="android:textColor">?dialCodeColor</item>
+    </style>
+
+    <style name="DialCodeTextStyle" parent="BaseDialCodeTextStyle">
+
+    </style>
+
+    <!--Base Style-->
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!--Dark Style-->
+    <style name="CountryPickerDarkStyle">
+        <item name="countryNameColor">@color/countryNameColorOnDark</item>
+        <item name="dialCodeColor">@color/dialCodeColorOnDark</item>
+        <item name="rowBackgroundColor">@color/rowBackgroundColorDark</item>
+        <item name="rowBackgroundSelectedColor">@color/selected_blue_dot_color</item>
+
+    </style>
+
+    <!--Light Style-->
+    <style name="CountryPickerLightStyle">
+        <item name="countryNameColor">@color/countryNameColorOnLight</item>
+        <item name="dialCodeColor">@color/dialCodeColorOnLight</item>
+        <item name="rowBackgroundColor">@color/rowBackgroundColorLight</item>
+        <item name="rowBackgroundSelectedColor">@color/selected_blue_dot_color</item>
+    </style>
+
+
+    <!--Bottom Sheet Dialog Style-->
+    <style name="BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--Background with corner-->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rectangle_setfingerprint_bottomsheet</item>
+    </style>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.dalua.app.models.AquariumGroup" />
+
+        <variable
+            name="item_pos"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.dalua.app.ui.aquariumdetails.AquariumDetailsVM" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:onClick="@{v->viewModel.onGroupClicked(item)}"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/selected_blue_dot_color"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_regular"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="@{item.name,default = `Group Name`}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@id/tvWaterType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:autoSizeMinTextSize="@dimen/_4sdp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/devices"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    tools:targetApi="o" />
+
+                <TextView
+                    android:id="@+id/textVdfdiew4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:autoSizeMinTextSize="@dimen/_4sdp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@{ ` `+item.devices.size()}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_7sdp"
+                    tools:targetApi="o" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWaterType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@{item.waterType.equals(`Marine`)?@drawable/round_blue:@drawable/round_green}"
+                android:text="@{item.waterType.equals(`Marine`)?`Saltwater`:`Freshwater`}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="@{item.waterType==null?View.GONE:View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
+

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dalua.app.ui.createschedule.fragments.mastercontrol.MasterControlFragmentVM" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.createschedule.fragments.mastercontrol.MasterControlFragment">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:maxEms="15"
+            android:maxLines="1"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/master_control"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/croller"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:layout_constraintVertical_bias="0.07999998">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.waterType.equals(`Fresh`)?@string/rotala_red:@string/smart_nuv}"
+                    android:textColor="@color/blue_selected_led_color"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline40"
+                    app:layout_constraintVertical_bias="0.053" />
+
+                <TextView
+                    android:id="@+id/atextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.aValue,default=`25`}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline39" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.waterType.equals(`Fresh`)?@string/emerald_green:@string/sapphire_nblue}"
+                    android:textColor="@color/blue_selected_led_color"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline40"
+                    app:layout_constraintVertical_bias="0.053" />
+
+                <TextView
+                    android:id="@+id/btextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.bValue,default=`25`}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline39" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.waterType.equals(`Fresh`)?@string/broad_ndaylight:@string/broad_ndaylight}"
+                    android:textColor="@color/blue_selected_led_color"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline40"
+                    app:layout_constraintVertical_bias="0.053" />
+
+                <TextView
+                    android:id="@+id/ctextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:maxEms="15"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@{viewModel.cValue,default=`25`}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                    app:layout_constraintStart_toStartOf="@+id/guideline37"
+                    app:layout_constraintTop_toTopOf="@+id/guideline39" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.sdsmdg.harjot.crollerTest.Croller
+            android:id="@+id/croller"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:fitsSystemWindows="true"
+            app:back_circle_color="#C8C7C7"
+            app:indicator_color="@color/croller_darkblue_color"
+            app:indicator_width="10"
+            app:is_continuous="false"
+            app:label=""
+            app:label_color="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93"
+            app:main_circle_color="#FFFFFF"
+            app:max="100"
+            app:min="0"
+            app:progress="20"
+            app:progress_primary_color="@color/croller_darkblue_color"
+            app:progress_secondary_color="#C8C7C7"
+            app:start_offset="45" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
